@@ -111,8 +111,10 @@ def main():
                     help="list of indexes to rebalance")
   parser.add_option("-r", "--recent_index", dest="recent_index", default="",
                     help="process recent index from wildcards")
-  parser.add_option("-f", dest="dry", action="store_true",
+  parser.add_option("-d", dest="dry", action="store_true",
                     help="dry run")
+  parser.add_option("-f", dest="force", action="store_true",
+                    help="force to relocate even if other relocations active")
   parser.add_option("-s", dest="host", default="localhost",
                     help="ES server, default islocalhost")
 
@@ -130,7 +132,8 @@ def main():
   if status != 'green':
     raise IOError('ES cluster status is ' + status)
 
-  if not all_started(es):
+
+  if not options.force and not all_started(es):
     raise IOError('not all shards STARTED')
 
   nodes = get_nodes(es)

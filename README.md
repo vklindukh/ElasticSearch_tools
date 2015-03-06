@@ -11,7 +11,8 @@ Options:
                         list of indexes to rebalance
   -r RECENT_INDEX, --recent_index=RECENT_INDEX
                         process recent index from wildcards
-  -f                    dry run
+  -d                    dry run
+  -f                    force to relocate even if other relocations active
   -s HOST               ES server, default islocalhost
 
 
