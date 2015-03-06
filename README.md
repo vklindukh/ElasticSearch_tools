@@ -15,7 +15,6 @@ Options:
   -f                    force to relocate even if other relocations active
   -s HOST               ES server, default islocalhost
 
-
 Example:
 
 ./shards_rebalance.py -i 'my_index1 my_index5'
