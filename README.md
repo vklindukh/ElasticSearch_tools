@@ -6,6 +6,7 @@ shards_rebalance - rebalance shards evenly across data nodes.
 Usage: shards_rebalance.py [options]
 
 Options:
+
   -h, --help            show this help message and exit 
   
   -i INDEX_LIST, --index=INDEX_LIST 
