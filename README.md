@@ -7,15 +7,14 @@ Usage: shards_rebalance.py [options]
 
 Options:
 
-  -h, --help            show this help message and exit 
-  
-  -i INDEX_LIST, --index=INDEX_LIST 
+    -h, --help          show this help message and exit 
+    -i INDEX_LIST, --index=INDEX_LIST 
                         list of indexes to rebalance 
-  -r RECENT_INDEX, --recent_index=RECENT_INDEX 
+    -r RECENT_INDEX, --recent_index=RECENT_INDEX 
                         process recent index from wildcards 
-  -d                    dry run 
-  -f                    force to relocate even if other relocations active 
-  -s HOST               ES server, default islocalhost 
+    -d                  dry run 
+    -f                  force to relocate even if other relocations active 
+    -s HOST             ES server, default is localhost 
 
 Example:
 
