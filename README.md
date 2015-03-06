@@ -7,6 +7,7 @@ Usage: shards_rebalance.py [options]
 
 Options:
   -h, --help            show this help message and exit 
+  
   -i INDEX_LIST, --index=INDEX_LIST 
                         list of indexes to rebalance 
   -r RECENT_INDEX, --recent_index=RECENT_INDEX 
